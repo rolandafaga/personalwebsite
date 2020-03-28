@@ -16,7 +16,13 @@ class BucketHandler(webapp2.RequestHandler):
         bucket_template = jinja_env.get_template('pages/bucket.html')
         self.response.write(bucket_template.render())
 
+class ResumeHandler(webapp2.RequestHandler):
+    def get(self):
+        resume_template = jinja_env.get_template('pages/resume.html')
+        self.response.write(resume_template.render())
+
 app = webapp2.WSGIApplication([
     ('/', HomeHandler),
     ('/bucket', BucketHandler),
+    ('/resume', ResumeHandler),
 ], debug=True)
