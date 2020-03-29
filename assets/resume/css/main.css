@@ -1774,18 +1774,17 @@ input, select, textarea {
 
 	ul.feature-icons {
 		list-style: none;
-		padding-left: 75px;
-		padding-right: 75px;
+		padding-left: 0;
 	}
 
 		ul.feature-icons li {
 			text-decoration: none;
 			display: inline-block;
-			margin: 0 0 1.25em 0;
+			margin: 0 0 1.6875em 0;
 			padding: 0.35em 0 0 3.5em;
 			position: relative;
 			vertical-align: top;
-			width: 78%;
+			width: 48%;
 		}
 
 			ul.feature-icons li:before {
@@ -1810,6 +1809,16 @@ input, select, textarea {
 				top: 0;
 				width: 2.5em;
 			}
+
+	#awards ul.feature.icons {
+		padding-left: 75px;
+		padding-right: 75px;
+	}
+
+	#awards ul.feature-icons li {
+		margin: 0 0 1.25em 0;
+		width: 78%
+	}
 
 /* Section/Article */
 
@@ -2650,6 +2659,10 @@ input, select, textarea {
 			opacity: 0.25;
 		}
 
+		#transcript {
+			background-color: #505050;
+		}
+
 /* Features */
 
 	.features article {
@@ -3331,7 +3344,7 @@ input, select, textarea {
 				padding-left: 50px;
 			}
 
-		ul.feature-icons li {
+		#awards ul.feature-icons li {
 			display: block;
 			width: 100%;
 		}

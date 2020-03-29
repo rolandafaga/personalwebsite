@@ -7,10 +7,12 @@ handlers:
     static_dir: images
   - url: /assets
     static_dir: assets
-  - url: /home-assets
-    static_dir: home-assets
-  - url: /resume-assets
-    static_dir: resume-assets
+  - url: /assets/home
+    static_dir: assets/home
+  - url: /assets/resume
+    static_dir: assets/resume
+  - url: /assets/bucket
+    static_dir: assets/bucket
   - url: /.*
     script: main.app
 
