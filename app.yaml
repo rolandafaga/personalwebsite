@@ -11,8 +11,8 @@ handlers:
     static_dir: assets/home
   - url: /assets/resume
     static_dir: assets/resume
-  - url: /assets/bucket
-    static_dir: assets/bucket
+  - url: /files
+    static_dir: files/
   - url: /.*
     script: main.app
 
