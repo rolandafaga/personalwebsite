@@ -1,21 +1,11 @@
-/* Wrapper */
+/*
+	Big Picture by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+*/
 
-	#wrapper {
-		opacity: 1 !important;
+/* Loader */
+
+	body:before, body:after {
+		display: none;
 	}
-
-/* Overlay */
-
-	#overlay {
-		opacity: 1 !important;
-	}
-
-/* Header */
-
-	#header {
-		opacity: 1 !important;
-	}
-
-		#header nav li {
-			opacity: 1 !important;
-		}

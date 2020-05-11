@@ -1,5 +1,6 @@
 @import url("font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
+@import url("https://fonts.googleapis.com/css?family=Assistant:400,400italic,700,700italic|Source+Sans+Pro:300,900");
+
 
 /*
 	Read Only by Pixelarity
@@ -99,7 +100,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #888;
-		font-family: "Lato", sans-serif;
+		font-family: "Assistant", sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
 		line-height: 1.75em;
@@ -135,7 +136,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #777;
-		font-weight: 700;
+		font-weight: 900;
 		line-height: 1em;
 		margin: 0 0 0.5625em 0;
 	}
@@ -1712,7 +1713,7 @@ input, select, textarea {
 	.container {
 		margin: 0 auto;
 		max-width: calc(100% - 7.5em);
-		width: 70em;
+		width: 50em;
 	}
 
 		.container.xsmall {
@@ -1756,6 +1757,7 @@ input, select, textarea {
 		}
 
 /* Awards Section */
+
 	#awards ul p{
 		padding: 0 30px 0 50px;
 	}
@@ -2538,7 +2540,7 @@ input, select, textarea {
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 700;
-		height: 2.75em;
+		height: 5.75em;
 		line-height: 2.75em;
 		padding: 0 1.5em;
 		text-align: center;
@@ -2671,8 +2673,9 @@ input, select, textarea {
 
 	.features article {
 		border-top: solid 3px #f4f4f4;
-		margin-bottom: 2.25em;
-		padding-top: 2.25em;
+		margin-bottom: 2em;
+		padding-top: 1.5em;
+		line-height: 1.5em;
 	}
 
 		.features article:first-child {
@@ -2682,20 +2685,19 @@ input, select, textarea {
 
 		.features article .image {
 			display: inline-block;
-			padding-right: 2.5em;
 			vertical-align: middle;
 			width: 40%;
 		}
 
 			.features article .image img {
 				display: block;
-				width: 100%;
+				width: 75%;
 			}
 
 		.features article .inner {
 			display: inline-block;
 			vertical-align: middle;
-			width: 50%;
+			width: 55%;
 		}
 
 			.features article .inner > :last-child {
@@ -2833,6 +2835,106 @@ input, select, textarea {
 						border-top: 0;
 					}
 
+/* Header */
+
+	#nav-header {
+		position: fixed;
+		z-index: 10000;
+		left: 0;
+		top: 0;
+		width: 100%;
+		background: rgba(255, 255, 255, 0.95);
+		height: 3.5em;
+		line-height: 3em;
+		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
+	}
+
+		#nav-header h1 {
+			position: absolute;
+			left: 1em;
+			top: 0;
+			height: 3em;
+			line-height: 3em;
+			cursor: default;
+		}
+
+			#nav-header h1 a {
+				font-size: 1em;
+			}
+
+		#nav-header nav {
+			position: absolute;
+			right: 0.5em;
+			top: 0;
+			height: 3em;
+			line-height: 1em;
+		}
+
+			#nav-header nav ul {
+				margin: 0.45em 2em 0 0;
+			}
+
+				#nav-header nav ul li {
+					display: inline-block;
+					margin-left: 0.5em;
+					font-size: 1em;
+					color: #4D4D4D;
+					font-family: "Source Sans Pro", sans-serif;
+
+				}
+
+					#nav-header nav ul li a {
+						font-family: "Source Sans Pro", sans-serif;
+						display: block;
+						color: inherit;
+						text-decoration: none;
+						height: 3em;
+						line-height: 3em;
+						padding: 0 0.5em 0 0.5em;
+						outline: 0;
+						border-bottom: 0;
+					}
+
+					#name {
+						font-family: "Source Sans Pro", sans-serif;
+						font-weight: 1000;
+						font-size: 1.2em;
+						color: #343434;
+					}
+
+		@media screen and (max-width: 736px) {
+
+			#nav-header {
+				height: 2.5em;
+				line-height: 1em;
+			}
+
+				#nav-header h1 {
+					text-align: center;
+					position: relative;
+					left: 0;
+					top: 0;
+					height: 2.5em;
+					line-height: 2.5em;
+				}
+
+					#nav-header h1 a {
+						font-size: 0.9em;
+					}
+
+				#nav-header nav {
+					display: none;
+				}
+
+				#name {
+					font-family: "Source Sans Pro", sans-serif;
+					font-weight: 900;
+					letter-spacing: 0.025em;
+					color: #343434;
+				}
+
+		}
+
 /* Wrapper */
 
 	#wrapper {
@@ -2861,7 +2963,7 @@ input, select, textarea {
 		border-top: 0;
 		color: #c0c0c0;
 		overflow: hidden;
-		padding: 4em 0 2em 0;
+		padding: 0.5em 0 2em 0;
 	}
 
 		#footer .copyright {
@@ -2902,6 +3004,7 @@ input, select, textarea {
 
 			#header {
 				width: 21em;
+				padding-top: 3em;
 			}
 
 				#header > header {

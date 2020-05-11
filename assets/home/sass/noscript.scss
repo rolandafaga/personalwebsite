@@ -4,26 +4,16 @@
 @import 'libs/vendor';
 @import 'libs/breakpoints';
 
-/* Wrapper */
+/*
+	Big Picture by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+*/
 
-	#wrapper {
-		opacity: 1 !important;
-	}
+/* Loader */
 
-/* Overlay */
-
-	#overlay {
-		opacity: 1 !important;
-	}
-
-/* Header */
-
-	#header {
-		opacity: 1 !important;
-
-		nav {
-			li {
-				opacity: 1 !important;
-			}
+	body {
+		&:before, &:after {
+			display: none;
 		}
 	}
