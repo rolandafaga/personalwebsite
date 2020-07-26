@@ -1,9 +1,10 @@
-/*
-	Phantom by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
-*/
 
+/* Loader */
+
+	body:before, body:after {
+		display: none;
+	}
+	
 /* Tiles */
 
 	body.is-preload .tiles article {
