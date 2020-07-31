@@ -1,0 +1,20 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^(www.)?rolandafaga.com$
+RewriteCond %{REQUEST_URI} !^/pages/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /pages/$1
+RewriteCond %{HTTP_HOST} ^(www.)?rolandafaga.com$
+RewriteRule ^(/)?$ pages/index.html [L]
+
+RewriteCond %{HTTP_HOST} ^(www.)?rolandafaga.com/projects$
+RewriteRule ^(/)?$ /pages/projects/ [L]
+
+# remove .php
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+)/?$ $1.php [L]
+
+#remove .html
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)/?$ $1.html [L]
