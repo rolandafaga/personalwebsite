@@ -27,6 +27,15 @@
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
 			}, 100);
+			
+			// Get the modal
+			var modal = document.getElementById("myModal");
+		
+			// Get the button that opens the modal
+			var btn = document.getElementById("high-school");
+		
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
 		});
 
 	// Tweaks/fixes.
@@ -120,16 +129,7 @@
 						});
 
 				});
-
-		// Title Bar.
-			$titleBar = $(
-				'<div id="titleBar">' +
-					'<a href="#header" class="toggle"></a>' +
-					'<span class="title">' + $('#logo').html() + '</span>' +
-				'</div>'
-			)
-				.appendTo($body);
-
+				
 		// Panel.
 			$header
 				.panel({
@@ -155,15 +155,6 @@
 
 			}
 		});
-
-	// Get the modal
-	var modal = document.getElementById("myModal");
-
-	// Get the button that opens the modal
-	var btn = document.getElementById("high-school");
-
-	// Get the <span> element that closes the modal
-	var span = document.getElementsByClassName("close")[0];
 
 	// When the user clicks on the button, open the modal
 	btn.onclick = function() {

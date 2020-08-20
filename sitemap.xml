@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://rolandafaga.com/</loc>
+  <lastmod>2020-08-03T06:00:37+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://rolandafaga.com/resume</loc>
+  <lastmod>2020-08-03T06:00:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rolandafaga.com/contact</loc>
+  <lastmod>2020-08-03T18:37:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rolandafaga.com/projects/</loc>
+  <lastmod>2020-08-03T06:00:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rolandafaga.com/projects/tailored</loc>
+  <lastmod>2020-08-03T06:00:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://rolandafaga.com/projects/google-cssi</loc>
+  <lastmod>2020-08-03T06:00:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://rolandafaga.com/files/resume.pdf</loc>
+  <lastmod>2020-07-29T00:49:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
