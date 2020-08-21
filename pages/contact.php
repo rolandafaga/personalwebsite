@@ -71,7 +71,7 @@
 						<header class="major">
 							<h2>Get in Touch</h2>
 						</header>
-						<form id="contact" method="post" action="/pages/contact.php">
+						<form id="contact" method="post" action="/contact">
 							<div class="row gtr-uniform gtr-50 fields">
 								<div class="field half"><input type="text" name="name" id="name" placeholder="Name *" required/></div>
 								<div class="field half"><input type="email" name="email" id="email" placeholder="Email *" required/></div>
