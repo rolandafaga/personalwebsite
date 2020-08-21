@@ -157,7 +157,7 @@
 	use PHPMailer\PHPMailer\PHPMailer;
 	use PHPMailer\PHPMailer\SMTP;
 
-	require __DIR__.'/../vendor/autoload.php';
+	require __DIR__.'/../assets/vendor/autoload.php';
 	
 	$mail = new PHPMailer;
 
