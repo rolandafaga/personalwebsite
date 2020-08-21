@@ -147,7 +147,6 @@
 					document.getElementById('captcha-response').value = response; 
 				}
 			</script>
-			<script src="../assets/js/jquery.dropotron.min.js"></script>
 			<script src="../assets/js/browser.min.js"></script>
 			<script src="../assets/js/breakpoints.min.js"></script>
 			<script src="../assets/js/util.js"></script>
@@ -158,20 +157,23 @@
 	use PHPMailer\PHPMailer\PHPMailer;
 	use PHPMailer\PHPMailer\SMTP;
 
-	require '../assets/vendor/autoload.php';
-
+	require __DIR__.'/../vendor/autoload.php';
+	
 	$mail = new PHPMailer;
 
 	$mail->isSMTP();
+	
+	$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+	$dotenv->load();
 
 	// $mail->SMTPDebug = SMTP::DEBUG_SERVER;
 	
-	$mail->Host = 'rolandafaga.com';                            //Set the hostname of the mail server
+	$mail->Host = $_ENV['MAIL_HOST'];                            //Set the hostname of the mail server
 	$mail->Port = 587;                                         //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
 	$mail->SMTPSecure = "tls";				        //Set the encryption mechanism to use - STARTTLS or SMTPS
 	$mail->SMTPAuth = true;                                    //Whether to use SMTP authentication
-	$mail->Username = 'admin@rolandafaga.com';                     //Username to use for SMTP authentication - use full email address for gmail
-	$mail->Password = 'Kaimipono1029';                           //Password to use for SMTP authentication
+	$mail->Username = $_ENV['MAIL_USERNAME'];                     //Username to use for SMTP authentication - use full email address for gmail
+	$mail->Password = $_ENV['MAIL_PASSWORD'];                           //Password to use for SMTP authentication
 	
 	$name = trim($_POST['name']);
 	$email = $_POST['email'];
@@ -190,7 +192,7 @@
 
 	if (isset($_POST['name'])) {
 		
-		$secret = '6Lf5F8AZAAAAANFLBNww9oat6jILEXxKIHfYEeUR';
+		$secret = $_ENV['RECAPTCHA_SECRET_KEY'];
 		$verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
 		$responseData = json_decode($verifyResponse);
 		if($responseData->success) {
@@ -215,7 +217,7 @@
 			$mail->addAddress($email, $name);      	
 			
 			$mail->Body    = "Thank you for getting in touch! I'll look over your message and get back to you soon. <br><br>I've attached your message below for future reference: <br><br><br><br><p style='color=:#676767';><i>". $message .
-					"</i></p><br><br><br><br> --- </br><b>Roland Afaga</b><br>Santa Clara University '22<br>Web Design and Engineering<br> <a href = 'https://rolandafaga.com'> rolandafaga.com </a> <br>";
+					"</i></p><br><br><br><br> --- </br><b>Roland Afaga</b><br>Santa Clara University '22<br>Web Design and Engineering<br> <a href = 'https://rolandafaga.com'> https://rolandafaga.com </a> <br>";
 			
 			$mail->send();	
 		} else { ?>
