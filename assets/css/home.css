@@ -640,7 +640,7 @@ input, select, textarea {
 		/* Basic */
 
 			body, input, select, textarea {
-				font-size: 13pt;
+				font-size: 14pt;
 			}
 
 		/* BG */
@@ -892,7 +892,7 @@ input, select, textarea {
 			}
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 12pt;
 			}
 
 		/* BG */
@@ -1140,7 +1140,7 @@ input, select, textarea {
 						text-decoration: none;
 						height: 3em;
 						line-height: 3em;
-						padding: 0 0.5em 0 0.5em;
+						padding: 0 0.75em 0 0.75em;
 						outline: none;
 						border-bottom: 0;
 					}
@@ -1149,6 +1149,8 @@ input, select, textarea {
 						font-family: "Source Sans Pro", sans-serif;
 						font-weight: 1000;
 						font-size: 1.2em;
+						letter-spacing: 0.02em;
+						padding-top: 0.2em;
 						color: #343434;
 					}
 

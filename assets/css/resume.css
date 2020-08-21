@@ -115,7 +115,7 @@ body {
 		font-size: 1.25em;
 		line-height: 1.3em;
 	}
-	
+
 /* Container */
 
 	.container {
@@ -537,7 +537,7 @@ body {
 						border-top: 0;
 					}
 
-/* Header */
+/* Navigation Header */
 
 	#nav-header {
 		position: fixed;
