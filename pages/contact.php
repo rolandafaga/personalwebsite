@@ -15,7 +15,7 @@
 		</script>
 		<!-- End Google Analytics -->
 		
-		<title> Contact - ROLAND</title>
+		<title> Contact | ROLAND</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -30,7 +30,7 @@
 	
 			<!-- Header -->
 			<header id="header">
-				<h1 id="title"><a href = "/"> ROLAND </a> </h1>
+				<h1 id="title" class="nounderline"><a href = "/"> ROLAND </a> </h1>
 				<nav>
 					<ul>
 						<li><a href="/projects/">Projects</a></li>
@@ -38,21 +38,32 @@
 						<li> <a href="/contact">Contact</a></li>
 					</ul>
 				</nav>
+				<button id="burger" class="open-main-nav">
+					<span class="burger"></span>
+				</button>
 			</header>
-	
+			
+			<nav class="main-nav" id="main-nav">
+				<ul>
+					<li> <a href="/projects/">Projects</a></li>
+					<li><a href="/resume">Resume</a></li>
+					<li><a href="/contact">Contact</a></li>
+				</ul>
+			</nav>
+				
 			<section id="wrapper">
 				
-				<section id="one" class="profile wrapper alt spotlight style3">
+				<section id="one" class="contact profile wrapper alt spotlight style3">
 					<div class="inner">
-						<div class="contact content align-center">
-							<a class="image"><img src="../images/profile-pic-1.jpg" alt="Roland Afaga Head Shot" /></a>
-							<ul class = "contact">
+						<div class="main content align-center">
+							<a class="image"><img src="../images/profile-pic-1.jpg" alt="Roland Afaga" /></a>
+							<ul class = "contact info">
 								<li class="fa-phone">+1 (808) 896-6599</li>
 								<li class="fa-envelope">rolandafaga@gmail.com</li>
 								<li class="fa-instagram">instagram.com/roland.afaga</li>
 							</ul>
 						</div>
-						<div class="content align-left">
+						<div class="bio content align-left">
 							<h2 class="major line-1 typewriter">Hello, World!</h2>
 							<p>From graphic design to web development, I've always been fascinated by how technology and good design have the ability to create waves in today's society. Combined with my passion for community service, I genuinely believe that 
 								together, design and tech have the power to aid people around the world. </p>
@@ -150,6 +161,7 @@
 			<script src="../assets/js/browser.min.js"></script>
 			<script src="../assets/js/breakpoints.min.js"></script>
 			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/menu.js"></script>
 	</body>
 </html>
 

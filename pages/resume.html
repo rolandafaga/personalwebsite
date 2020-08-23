@@ -15,7 +15,7 @@
 		</script>
 		<!-- End Google Analytics -->
 		
-		<title>Resume - ROLAND </title>
+		<title>Resume | ROLAND </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/resume.css" />
@@ -25,7 +25,7 @@
 
 			<section id="header">
 				<header>
-					<span class="image avatar"><a><img src="../images/profile-pic.jpg" alt="Roland Afaga Head Shot" /></a></span>
+					<span class="image avatar"><a><img src="../images/profile-pic.jpg" alt="Roland Afaga" /></a></span>
 					<h1 id="logo"><a>Roland Afaga</a></h1>
 					<p> Santa Clara University '22 <br/>
 						Graphic Designer &nbsp;&bull;&nbsp; Web Developer </p>
@@ -61,8 +61,19 @@
 							<li> <a href="/contact">Contact</a></li>
 						</ul>
 					</nav>
+					<button id="burger" class="open-main-nav">
+						<span class="burger"></span>
+					</button>
 				</header>
-
+				
+				<nav class="main-nav" id="main-nav">
+					<ul>
+						<li> <a href="/projects/">Projects</a></li>
+						<li><a href="/resume">Resume</a></li>
+						<li><a href="/contact">Contact</a></li>
+					</ul>
+				</nav>
+				
 				<button id = "print">
 					<a href = "/files/resume.pdf" target = "_blank" class = "icon fa-print"></a>
 				</button>
@@ -106,7 +117,7 @@
 										<article>
 											<a class="image"><img src="../images/scu-logo.png" alt="Santa Clara University Logo" /></a>
 											<div class="inner">
-												<h4> <u> Santa Clara University </u> </h4>
+												<h4> Santa Clara University </h4>
 												<p> <b> School of Engineering <br>
 													Web Design and Engineering Major </b> <br>
 													Expected Graduation Date: June 2022 <br>
@@ -118,7 +129,7 @@
 										<article>
 											<a class="image"><img src="../images/hhis-logo.png" alt="Honokaa High School Logo" /></a>
 											<div class="inner">
-												<h4> <u> Honoka'a High and Intermediate School </u> </h4>
+												<h4> Honoka'a High and Intermediate School </h4>
 												<p>Summa Cum Laude Diploma, Valedictorian, CTE Honors <br>
 													Graduation Date: May 2018  |  GPA: 4.076 </p>
 								
@@ -293,6 +304,7 @@
 			<script src="../assets/js/breakpoints.min.js"></script>
 			<script src="../assets/js/util.js"></script>
 			<script src="../assets/js/resume.js"></script>
+			<script src="../assets/js/menu.js"></script>
 
 	</body>
 </html>
