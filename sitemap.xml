@@ -5,45 +5,52 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+
 <url>
   <loc>https://rolandafaga.com/</loc>
-  <lastmod>2020-08-03T06:00:37+00:00</lastmod>
+  <lastmod>2020-08-24T03:01:42+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.rolandafaga.com/</loc>
+  <lastmod>2020-08-24T03:01:42+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://rolandafaga.com/projects/</loc>
-  <lastmod>2020-08-03T06:00:39+00:00</lastmod>
+  <lastmod>2020-08-23T19:28:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-       <url>
-         <loc>https://rolandafaga.com/projects/tailored</loc>
-         <lastmod>2020-08-03T06:00:39+00:00</lastmod>
-         <priority>0.64</priority>
-       </url>
-       <url>
-         <loc>https://rolandafaga.com/projects/google-cssi</loc>
-         <lastmod>2020-08-03T06:00:41+00:00</lastmod>
-         <priority>0.64</priority>
-       </url>
 <url>
   <loc>https://rolandafaga.com/resume</loc>
-  <lastmod>2020-08-03T06:00:36+00:00</lastmod>
+  <lastmod>2020-08-23T19:28:24+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://rolandafaga.com/contact</loc>
-  <lastmod>2020-08-03T18:37:12+00:00</lastmod>
+  <lastmod>2020-08-24T04:00:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://rolandafaga.com/projects/tailored</loc>
+  <lastmod>2020-08-23T19:28:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://rolandafaga.com/projects/google-cssi</loc>
+  <lastmod>2020-08-23T19:28:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://rolandafaga.com/files/resume.pdf</loc>
-  <lastmod>2020-07-29T00:49:21+00:00</lastmod>
+  <lastmod>2020-08-21T03:12:29+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://rolandafaga.com/files/islanderscholar.pdf</loc>
-  <lastmod>2020-07-29T00:49:21+00:00</lastmod>
+  <lastmod>2020-08-21T03:11:09+00:00</lastmod>
   <priority>0.64</priority>
 </url>
+
 
 </urlset>
