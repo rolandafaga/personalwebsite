@@ -333,7 +333,7 @@ body {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2.25em 0;
+		/* margin: 0 0 2.25em 0; */
 		padding-left: 1em;
 	}
 
@@ -344,6 +344,12 @@ body {
 	ul ul {
 		list-style: circle;
 		padding-left: 50px;
+	}
+	
+	.leadership {
+		font-weight: bold;
+		font-style: italic;
+		/* text-decoration: underline; */
 	}
 
 /* Icons */

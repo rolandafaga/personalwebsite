@@ -666,7 +666,7 @@ input, select, textarea {
 
 	ul.contact {
 		list-style: none;
-		padding-left: 1.75em;
+		padding-right: 2em;
 		color: #eeeeee;
 		font-style: italic;
 	}
@@ -741,13 +741,18 @@ input, select, textarea {
 	.image {
 		border-radius: 5px;
 		border: 0;
-		display: inline-block;
 		position: relative;
 	}
 
 		.image img {
 			border-radius: 5px;
 			display: block;
+			width: 100%;
+		}
+		
+		#profile img {
+			width: 75%;
+			margin: 0 auto 2em auto;
 		}
 
 		.image.left, .image.right {
@@ -1266,6 +1271,11 @@ input, select, textarea {
 		margin: -2.5em 0 0 -2.5em;
 	}
 
+	.tiles.half article {
+		display: flex;
+		width: 45%;
+	}
+
 		.tiles article {
 			-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
 			-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
@@ -1402,11 +1412,11 @@ input, select, textarea {
 			}
 
 			.tiles article.style2 > .image:before {
-				background-color: #7ecaf6;
+				background-color: #448eb9;
 			}
 
 			.tiles article.style3 > .image:before {
-				background-color: #002046;
+				background-color: #3c3c3c;
 			}
 
 			.tiles article.style4 > .image:before {

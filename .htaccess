@@ -11,6 +11,9 @@ RewriteRule ^(/)?$ pages/index.html [L]
 RewriteCond %{HTTP_HOST} ^(www.)?rolandafaga.com/projects$
 RewriteRule ^(/)?$ /pages/projects/ [L]
 
+RewriteCond %{HTTP_HOST} ^(www.)?rolandafaga.com/arts74$
+RewriteRule ^(/)?$ /pages/arts74/ [L]
+
 # remove .php
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^(.+)/?$ $1.php [L]

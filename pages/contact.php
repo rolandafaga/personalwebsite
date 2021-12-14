@@ -25,7 +25,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<script src='https://www.google.com/recaptcha/api.js' async defer > </script>
-		<link rel="icon" type = "image/ico" href = "../images/favicon.ico">
+		<link rel="icon" type = "image/ico" href = "../images/favicon.ico" sizes="256x256">
 	</head>
 	<body class="is-preload contact">
 		<div id="page-wrapper">
@@ -58,11 +58,12 @@
 				<section id="one" class="contact profile wrapper alt spotlight style3">
 					<div class="inner">
 						<div class="main content align-center">
-							<a class="image"><img src="../images/profile-pic-1.jpg" alt="Roland Afaga" /></a>
+							<a id="profile" class="image"><img src="../images/profile-pic-1.jpg" alt="Roland Afaga" /></a>
 							<ul class = "contact info">
-								<li class="fa-phone">+1 (808) 896-6599</li>
-								<li class="fa-envelope">rolandafaga@gmail.com</li>
-								<li class="fa-instagram">instagram.com/roland.afaga</li>
+								<!-- <li class="fa-phone">+1 (808) 896-6599</li> -->
+								<li class="fa-envelope"> <a href="mailto:rolandafaga@gmail.com" target = "_blank">rolandafaga@gmail.com</a> </li>
+								<li class="fa-linkedin"> <a href="https://linkedin.com/in/roland-afaga" target = "_blank">linkedin.com/in/roland-afaga/</a> </li>
+								<li class="fa-github"> <a href="https://linkedin.com/in/roland-afaga" target = "_blank">github.com/rolandafaga</a> </li>
 							</ul>
 						</div>
 						<div class="bio content align-left">
@@ -72,7 +73,7 @@
 								
 							<p> I'm a designer whose story originates in a small town on the Big Island of Hawai'i. In my free time, you can catch me going on hikes or
 								 traveling to experience the world's natural beauty in its entirety. </p>
-							<p>I am currently a junior at Santa Clara University pursuing my Bachelor's in Web Design and Engineering. I am actively searching for an internship for the upcoming summer, but am open to 
+							<p>I am currently a senior at Santa Clara University pursuing my Bachelor's in Web Design and Engineering. I am actively searching for a full-time job to start after I graduate from college, but am open to 
 								any opportunities that will allow me to grow as a person.</p>
 						</div>
 					</div>
@@ -182,48 +183,46 @@
 
 	// $mail->SMTPDebug = SMTP::DEBUG_SERVER;
 	
-	$mail->Host = $_ENV['MAIL_HOST'];                            //Set the hostname of the mail server
-	$mail->Port = 587;                                         //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
-	$mail->SMTPSecure = "tls";				        //Set the encryption mechanism to use - STARTTLS or SMTPS
-	$mail->SMTPAuth = true;                                    //Whether to use SMTP authentication
-	$mail->Username = $_ENV['MAIL_USERNAME'];                     //Username to use for SMTP authentication - use full email address for gmail
-	$mail->Password = $_ENV['MAIL_PASSWORD'];                           //Password to use for SMTP authentication
-	
 	$name = trim($_POST['name']);
 	$email = $_POST['email'];
-	$number = rand(101, 999);
+	$email = filter_var($email, FILTER_SANITIZE_EMAIL);
+	
+	if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+		$mail->Host = $_ENV['MAIL_HOST'];                            //Set the hostname of the mail server
+		$mail->Port = 587;                                         //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
+		$mail->SMTPSecure = "tls";				        //Set the encryption mechanism to use - STARTTLS or SMTPS
+		$mail->SMTPAuth = true;                                    //Whether to use SMTP authentication
+		$mail->Username = $_ENV['MAIL_USERNAME'];                     //Username to use for SMTP authentication - use full email address for gmail
+		$mail->Password = $_ENV['MAIL_PASSWORD'];                           //Password to use for SMTP authentication
+	} 
+	
 	$subject = trim($_POST['subject']);
 	$message = $_POST['message'];
 
-	$mail->setFrom('admin@rolandafaga.com', $name);                   	   //Set who the message is to be sent from, DOESN'T work with gmail 
-	$mail->addReplyTo($email, $name);                                 	   //Set an alternative reply-to address
-	$mail->addAddress('admin@rolandafaga.com', 'Roland Afaga');      	   //Set who the message is to be sent to
+	if ($_POST["name"] != "") {
 
-	$mail->Subject = $subject.' [ID# '.$number.']';                    	   //Set the subject line	
-	$mail->Body    = $message . '<br><br> --- </br><b>' . $name . '</b><br>' . $email;
-	$mail->AltBody = $message;                				   //Replace the plain text body with one created manually
+		$mail->setFrom('admin@rolandafaga.com', $name);                   	   //Set who the message is to be sent from, DOESN'T work with gmail 
+		$mail->addReplyTo($email, $name);                                 	   //Set an alternative reply-to address
+		$mail->addAddress('admin@rolandafaga.com', 'Roland Afaga');      	   //Set who the message is to be sent to
 
-
-	if (isset($_POST['name'])) {
-		
+		$mail->Subject = $subject;                    	   //Set the subject line	
+		$mail->Body    = $message . '<br><br> --- </br><b>' . $name . '</b><br>' . $email;
+		$mail->AltBody = $message;                				   //Replace the plain text body with one created manually
+			
 		$secret = $_ENV['RECAPTCHA_SECRET_KEY'];
 		$verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
 		$responseData = json_decode($verifyResponse);
 		if($responseData->success) {
-			if ($_POST["name"] != "") {
-			//send the message, check for errors
-				if (!$mail->send()) { ?>
-					<script language="javascript" type="text/javascript">
-						$("#contact-error").modal("toggle");
-					</script> <?php
-				} else { ?>
-					<script language="javascript" type="text/javascript">
-						$("#contact-success").modal("toggle");
-					</script>
-				<?php
-				}
+		//send the message, check for errors
+			if (!$mail->send()) { ?>
+				<script language="javascript" type="text/javascript">
+					$("#contact-error").modal("toggle");
+				</script> <?php
+			} else { ?>
+				<script language="javascript" type="text/javascript">
+					$("#contact-success").modal("toggle");
+				</script> <?php
 			}
-
 			$mail->ClearAllRecipients();
 			
 			$mail->setFrom('admin@rolandafaga.com', 'Roland Afaga');                   	  
