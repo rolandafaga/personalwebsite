@@ -15,7 +15,7 @@
 		</script>
 		<!-- End Google Analytics -->
 		
-		<title> Contact | ROLAND</title>
+		<title> ROLAND</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="canonical" href="https://rolandafaga.com" />
@@ -68,13 +68,13 @@
 						</div>
 						<div class="bio content align-left">
 							<h2 class="major line-1 typewriter">Hello, World!</h2>
-							<p>From graphic design to web development, I've always been fascinated by how technology and good design have the ability to create waves in today's society. Combined with my passion for community service, I genuinely believe that 
-								together, design and tech have the power to aid people around the world. </p>
-								
-							<p> I'm a designer whose story originates in a small town on the Big Island of Hawai'i. In my free time, you can catch me going on hikes or
-								 traveling to experience the world's natural beauty in its entirety. </p>
-							<p>I am currently a senior at Santa Clara University pursuing my Bachelor's in Web Design and Engineering. I am actively searching for a full-time job to start after I graduate from college, but am open to 
-								any opportunities that will allow me to grow as a person.</p>
+							<p>I am a recent graduate from Santa Clara University's School of Engineering with project management and front-end development experience. </p>
+
+							<p> From graphic design to web development, I've always been fascinated by how technology and good design have the ability to create 
+								waves in today's society. Combined with my passion for community service, I genuinely believe that together, design and tech have the power to aid people around the world. </p>
+
+							<p> I'm seeking to leverage my leadership abilities and engineering background to develop customer-centric products and experiences 
+								through full-time product management or user experience positions. </p>
 						</div>
 					</div>
 				</section>
@@ -183,7 +183,7 @@
 
 	// $mail->SMTPDebug = SMTP::DEBUG_SERVER;
 	
-	$name = trim($_POST['name']);
+	$name = trim((string) $_POST['name']);
 	$email = $_POST['email'];
 	$email = filter_var($email, FILTER_SANITIZE_EMAIL);
 	
