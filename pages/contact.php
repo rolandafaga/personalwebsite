@@ -13,11 +13,10 @@
 		</script>
 		<!-- End Google Analytics -->
 		
-		<title> ROLAND</title>
+		<title> Contact | ROLAND</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="canonical" href="https://rolandafaga.com" />
-
+		<link rel="canonical" href="https://rolandafaga.com/contact" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="../assets/css/projects.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -33,8 +32,8 @@
 				<h1 id="title" class="nounderline"><a href = "/"> ROLAND </a> </h1>
 				<nav>
 					<ul>
-						<li><a href="/projects/">Projects</a></li>
 						<li><a href="/resume">Resume</a></li>
+						<li><a href="/projects/">Projects</a></li>
 						<li> <a href="/contact">Contact</a></li>
 					</ul>
 				</nav>
@@ -66,7 +65,7 @@
 						</div>
 						<div class="bio content align-left">
 							<h2 class="major line-1 typewriter">Hello, World!</h2>
-							<p>I am a recent graduate from Santa Clara University's School of Engineering with project management and front-end development experience. </p>
+							<p>I am a graduate from Santa Clara University's School of Engineering with project management and front-end development experience. </p>
 
 							<p> From graphic design to web development, I've always been fascinated by how technology and good design have the ability to create 
 								waves in today's society. Combined with my passion for community service, I genuinely believe that together, design and tech have the power to aid people around the world. </p>

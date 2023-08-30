@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+	<loc>https://rolandafaga.com/</loc>
+	<lastmod>2023-08-20T01:19:47+01:00</lastmod>
+	<priority>1.0</priority>
+	<image:image>
+			<image:loc>https://rolandafaga.com/images/wallpaper.png</image:loc>
+	</image:image>
+</url>
+<url>
+	<loc>https://rolandafaga.com/resume</loc>
+	<lastmod>2023-08-20T01:19:47+01:00</lastmod>
+	<priority>1.0</priority>
+	<image:image>
+			<image:loc>https://rolandafaga.com/images/profile-pic.jpg</image:loc>
+	</image:image>
+</url>
+<url>
+	<loc>https://rolandafaga.com/projects/</loc>
+	<lastmod>2023-08-20T01:19:47+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://rolandafaga.com/contact</loc>
+	<lastmod>2023-08-20T01:19:47+01:00</lastmod>
+	<priority>1.0</priority>
+	<image:image>
+			<image:loc>https://rolandafaga.com/images/profile-pic-1.jpg</image:loc>
+	</image:image>
+</url>
+<url>
+	<loc>https://rolandafaga.com/files/resume.pdf</loc>
+	<lastmod>2023-08-20T01:19:48+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://rolandafaga.com/files/islanderscholar.pdf</loc>
+	<lastmod>2023-08-20T01:19:48+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://rolandafaga.com/projects/collage-art-therapy-bot</loc>
+	<lastmod>2023-08-20T01:19:49+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://rolandafaga.com/projects/tailored</loc>
+	<lastmod>2023-08-20T01:19:49+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://rolandafaga.com/projects/google-cssi</loc>
+	<lastmod>2023-08-20T01:19:49+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://rolandafaga.com/projects/design-portfolio</loc>
+	<lastmod>2023-08-20T01:19:49+01:00</lastmod>
+	<priority>0.8</priority>
+	<image:image>
+			<image:loc>https://rolandafaga.com/images/animal-logo_01.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://rolandafaga.com/images/animal-logo_02.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://rolandafaga.com/images/app-interface_01.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://rolandafaga.com/images/app-interface_02.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://rolandafaga.com/images/app-interface_03.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://rolandafaga.com/images/nonprofit-organization_01.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://rolandafaga.com/images/scu-student-organization_01.jpg</image:loc>
+	</image:image>
+</url>
+</urlset>
